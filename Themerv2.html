@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="css/Themer.css"/>
+<script src="src/GTK.js"></script>
+<script src="src/Themer.js"></script>
+<div class="mainwindow">
+    <div class="window">
+	<div id="titlebar">LWCE Themer</div> <!-- should be part of mainwindow -->
+	<div class="themer">
+	    <div id="selector">
+		Target:<select id="target"></select>
+	    </div>
+	    <div class="css-option">background-color:<input type="color" class="css-input background-color"/></div>
+	    <div class="css-option">color:<input type="color" class="css-input color"/><input type="text" class="css-input color" maxlength="7"/></div>
+	    <div class="css-gen">
+		<textarea id="css-output" readonly="true"></textarea>
+		<button id="css-export">Export CSS</button>
+	    </div>
+	</div>
+    </div>
+</div>
